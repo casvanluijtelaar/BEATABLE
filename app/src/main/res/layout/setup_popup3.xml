@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_bg"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="hit object"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Time to link your instrument to the physical world, find a suitable surface and get ready."
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <ProgressBar
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/detectProgressBar"
+            android:theme="@style/progressTheme"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/detectBtn"
+            android:layout_gravity="center_horizontal"
+            android:width="200dp"
+            android:focusable="false"
+            android:background="@drawable/circle_bg"
+            android:focusableInTouchMode="false"
+            android:layout_margin="30dp"
+            android:layout_alignTop="@+id/detectProgressBar"
+            android:layout_alignRight="@+id/detectProgressBar"
+            android:layout_alignBottom="@+id/detectProgressBar"
+            android:layout_alignLeft="@+id/detectProgressBar"
+            />
+    </RelativeLayout>
+
+
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/prev3Btn"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/design_default_color_primary"
+            android:text="back"
+            android:layout_gravity="start"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/next3Btn"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:background="@color/design_default_color_primary"
+            android:text="done"  />
+    </TableRow>
+
+</LinearLayout>
